@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.ancho {
+    width: 100%;
+}
+.encabezado {
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.515);
+}
+.menu {
+    height: 50px;
+    background-color: #0f0;
+}
+.pie {
+    height: 100px;
+    background-color: #ff0;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.lateral_izq {
+    width: 15%;
+    height: inherit;
+    background-color: #f0f;
+    
+}
+.centro {
+    width: 70%;
+    height: inherit;
+    background-color: #0ff;
+    
+}
+.lateral_der {
+    width: 15%;
+    height: inherit;
+    background-color: rgb(229, 17, 183);
+    
+}
+
+@media screen and (max-width: 768px) {
+    .encabezado{
+        background-color: black;
+    }
+    .cuerpo{
+        flex-direction: column;
+        height: 700px;
+    }
+    
+    .lateral_izq, .lateral_der, .centro{
+        width: 100%;
+    }
+
+    .lateral_izq, .lateral_der{
+        height: 100px;
+    }
+}

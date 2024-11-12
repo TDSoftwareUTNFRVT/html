@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.ancho {
+    width: 100%;
+}
+.encabezado {
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.515);
+}
+.menu {
+    height: 50px;
+    background-color: #0f0;
+}
+.cuerpo{
+    height: 500px;
+    background-color: #00f;
+}
+.lateral_izq {
+    width: 15%;
+    height: inherit;
+    background-color: #f0f;
+    float: left;
+}
+.centro {
+    width: 70%;
+    height: inherit;
+    background-color: #0ff;
+    float: left;
+}
+.lateral_der {
+    width: 15%;
+    height: inherit;
+    background-color: rgb(229, 17, 183);
+    float: left;
+}
+.pie {
+    height: 100px;
+    background-color: #ff0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .encabezado{
+        background-color: black;
+    }
+    .lateral_izq, .lateral_der{
+        width: 20%;
+    }
+    .centro{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .encabezado{
+        background-color: yellow;
+    }
+    .lateral_izq, .lateral_der{
+        display: none;
+    }
+    .centro{
+        width: 100%;
+    }
+    
+}
